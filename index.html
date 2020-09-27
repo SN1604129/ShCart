@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Products</h3>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products">
+                            <tr>
+                                <td>Milk</td>
+                                <td>10Tk</td>
+                                <td>
+                                    <button class="btn btn-success">
+                                        ADD TO CART
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-10">
+                        <h3>Cart</h3>
+                    </div>
+
+                    <div class="col-2">
+                        <b id="total-price">Total : 0Tk</b>
+                    </div>
+
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <tr>
+                                <td>Milk</td>
+                                <td>10Tk</td>
+                                <td>1</td>
+                                <td>10Tk</td>
+                                <td>
+                                    <button class="btn btn-danger">
+                                        REMOVE FROM CART
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
